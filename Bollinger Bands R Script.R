@@ -26,12 +26,17 @@ View(bb20)
 data.disney.bbands <- data.frame(data.disney, bb20)
 View(data.disney.bbands)
 
-## attach(data.disney.bbands)
-## plot(data.disney.bbands$Date, data.disney$Close, xlim = c(as.Date("10-21-15"),as.Date("09-21-16")), ylim = c(min(data.disney$Close), max(data.disney$Close)))
-## lines(data.disney.bbands$Close, col ="red")
-## lines(data.disney.bbands$up, col = "purple")
-## lines(data.disney.bbands$dn, col = "brown")
-## lines(data.disney.bbands$mavg, col = "blue")
+# attach(data.disney.bbands)
+# plot(data.disney.bbands$Date, 
+#      data.disney$Close, 
+#      xlim = c(as.Date("10-21-15"), 
+#               as.Date("09-21-16")), 
+#      ylim = c(min(data.disney$Close), 
+#               max(data.disney$Close)))
+#  lines(data.disney.bbands$Close, col ="red")
+#  lines(data.disney.bbands$up, col = "purple")
+#  lines(data.disney.bbands$dn, col = "brown")
+#  lines(data.disney.bbands$mavg, col = "blue")
 
 newdata <- data.disney.bbands[21:250, ]
 attach(newdata)
